@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Student {
 
-    // 1. Data members (attributes)
+
     private int studentId;
     private String studentName;
     private String email;
@@ -15,12 +15,11 @@ public class Student {
     private double mathematicsScore;
     private List<String> technicalSkills;
 
-    // 2. Default constructor
+  
     public Student() {
         technicalSkills = new ArrayList<>();
     }
 
-    // 3. Parameterized constructor
     public Student(int studentId, String studentName,
                    String email, String courseName,
                    double programmingScore,
@@ -36,7 +35,6 @@ public class Student {
         this.technicalSkills = new ArrayList<>(technicalSkills);
     }
 
-    // 4. Getters and Setters
 
     public int getStudentId() {
         return studentId;
@@ -94,17 +92,14 @@ public class Student {
         this.technicalSkills = new ArrayList<>(technicalSkills);
     }
 
-    // 5. Calculate average score
     public double calculateAverage() {
         return (programmingScore + mathematicsScore) / 2;
     }
 
-    // 6. Add a technical skill
     public void addSkill(String skill) {
         technicalSkills.add(skill);
     }
 
-    // 7. Display student details
     @Override
     public String toString() {
         return "Student ID: " + studentId +

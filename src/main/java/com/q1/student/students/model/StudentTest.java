@@ -17,10 +17,8 @@ public class StudentTest {
             Arrays.asList("Java", "C++", "SQL")
         );
 
-        // Add another skill
         s1.addSkill("Spring Boot");
 
-        // Display student details
         System.out.println(s1);
     }
 }
